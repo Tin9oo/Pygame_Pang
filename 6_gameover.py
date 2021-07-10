@@ -162,7 +162,6 @@ while running:
 
         # 공과 캐릭터 충돌 처리
         if character_rect.colliderect(ball_rect):
-            
             running = False
             break
 
@@ -211,6 +210,9 @@ while running:
                         "init_spd_y" : ball_speed_y[ball_img_idx + 1] # first speed of y
                     })
                 break
+        else:
+            continue
+        break
 
     # 충돌된 공 무기 없애기
     if ball_to_remove > -1:
